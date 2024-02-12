@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalTime;
+
 @Entity
 @Table(name = "skater_stats")
 @AllArgsConstructor
@@ -34,4 +36,12 @@ public class SkaterStats {
     private int faceOffsCount;
     @Column(name = "face_offs_wins")
     private int faceOffsWins;
+    @Column(name = "shot_top_speed")
+    private float shotTopSpeed;
+    @Column(name = "skating_top_speed")
+    private float skatingTopSpeed;
+    @Column(name = "time_on_the_ice")
+    private LocalTime timeOnTheIce;
+    @Column(name = "total_distance")
+    private int totalDistance;
 }

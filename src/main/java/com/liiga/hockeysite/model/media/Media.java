@@ -27,7 +27,7 @@ public class Media {
     private String header;
     @Column(name = "creation_date")
     private LocalDateTime creationDate;
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "user_id")
     private User createdBy;
     @Enumerated(EnumType.STRING)

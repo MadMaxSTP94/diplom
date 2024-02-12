@@ -32,6 +32,8 @@ public class Player {
     private PlayerNationality nationality;
     @Column(name = "photo_url")
     private String photoUrl;
+    @Column(name = "jersey_number")
+    private int jerseyNumber;
     @Column(name = "date_of_birth")
     private LocalDateTime dateOfBirth;
     @Enumerated(EnumType.STRING)

@@ -19,7 +19,7 @@ import java.util.List;
 public class Role {
     @Id
     @GeneratedValue
-    private int id;
+    private Integer id;
     @Enumerated(EnumType.STRING)
     private RoleName name;
     @ManyToMany
